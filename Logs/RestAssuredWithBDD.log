@@ -1,0 +1,390 @@
+2023-08-27 12:34:58,692 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {}->http://localhost:3000
+2023-08-27 12:34:58,709 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to localhost:3000
+2023-08-27 12:34:58,712 DEBUG [main] DefaultClientConnectionOperator:198 - Connect to localhost:3000 timed out. Connection will be retried using another IP address
+2023-08-27 12:34:58,713 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to localhost:3000
+2023-08-27 12:34:58,738 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-08-27 12:34:58,741 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-08-27 12:34:58,742 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-08-27 12:34:58,763 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-08-27 12:34:58,765 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-08-27 12:34:58,766 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /user HTTP/1.1
+2023-08-27 12:34:58,767 DEBUG [main] wire:73 -  >> "POST /user HTTP/1.1[\r][\n]"
+2023-08-27 12:34:58,770 DEBUG [main] wire:73 -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+2023-08-27 12:34:58,771 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2023-08-27 12:34:58,772 DEBUG [main] wire:73 -  >> "Content-Length: 104[\r][\n]"
+2023-08-27 12:34:58,773 DEBUG [main] wire:73 -  >> "Host: localhost:3000[\r][\n]"
+2023-08-27 12:34:58,774 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-08-27 12:34:58,779 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)[\r][\n]"
+2023-08-27 12:34:58,780 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-08-27 12:34:58,782 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-08-27 12:34:58,782 DEBUG [main] headers:278 - >> POST /user HTTP/1.1
+2023-08-27 12:34:58,785 DEBUG [main] headers:281 - >> Accept: application/json, application/javascript, text/javascript, text/json
+2023-08-27 12:34:58,787 DEBUG [main] headers:281 - >> Content-Type: application/json
+2023-08-27 12:34:58,788 DEBUG [main] headers:281 - >> Content-Length: 104
+2023-08-27 12:34:58,789 DEBUG [main] headers:281 - >> Host: localhost:3000
+2023-08-27 12:34:58,791 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-08-27 12:34:58,792 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+2023-08-27 12:34:58,793 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-08-27 12:34:58,797 DEBUG [main] wire:87 -  >> "{"id":0,"name":"Darius Greenholt","gender":"female","email":"carter.brekke@gmail.com","status":"female"}"
+2023-08-27 12:34:58,829 DEBUG [main] wire:73 -  << "HTTP/1.1 201 Created[\r][\n]"
+2023-08-27 12:34:58,832 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-08-27 12:34:58,833 DEBUG [main] wire:73 -  << "Vary: Origin, X-HTTP-Method-Override, Accept-Encoding[\r][\n]"
+2023-08-27 12:34:58,834 DEBUG [main] wire:73 -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2023-08-27 12:34:58,834 DEBUG [main] wire:73 -  << "Cache-Control: no-cache[\r][\n]"
+2023-08-27 12:34:58,835 DEBUG [main] wire:73 -  << "Pragma: no-cache[\r][\n]"
+2023-08-27 12:34:58,836 DEBUG [main] wire:73 -  << "Expires: -1[\r][\n]"
+2023-08-27 12:34:58,837 DEBUG [main] wire:73 -  << "Access-Control-Expose-Headers: Location[\r][\n]"
+2023-08-27 12:34:58,844 DEBUG [main] wire:73 -  << "Location: http://localhost:3000/user/1339[\r][\n]"
+2023-08-27 12:34:58,845 DEBUG [main] wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2023-08-27 12:34:58,846 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-08-27 12:34:58,847 DEBUG [main] wire:73 -  << "Content-Length: 128[\r][\n]"
+2023-08-27 12:34:58,847 DEBUG [main] wire:73 -  << "ETag: W/"80-ZUQdMU8ds+j0zjlRYgtyhBw8CYo"[\r][\n]"
+2023-08-27 12:34:58,848 DEBUG [main] wire:73 -  << "Date: Sun, 27 Aug 2023 07:04:58 GMT[\r][\n]"
+2023-08-27 12:34:58,856 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-08-27 12:34:58,861 DEBUG [main] wire:73 -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-08-27 12:34:58,862 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-08-27 12:34:58,863 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 201 Created
+2023-08-27 12:34:58,864 DEBUG [main] headers:262 - << HTTP/1.1 201 Created
+2023-08-27 12:34:58,866 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-08-27 12:34:58,867 DEBUG [main] headers:265 - << Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+2023-08-27 12:34:58,867 DEBUG [main] headers:265 - << Access-Control-Allow-Credentials: true
+2023-08-27 12:34:58,868 DEBUG [main] headers:265 - << Cache-Control: no-cache
+2023-08-27 12:34:58,868 DEBUG [main] headers:265 - << Pragma: no-cache
+2023-08-27 12:34:58,869 DEBUG [main] headers:265 - << Expires: -1
+2023-08-27 12:34:58,869 DEBUG [main] headers:265 - << Access-Control-Expose-Headers: Location
+2023-08-27 12:34:58,870 DEBUG [main] headers:265 - << Location: http://localhost:3000/user/1339
+2023-08-27 12:34:58,870 DEBUG [main] headers:265 - << X-Content-Type-Options: nosniff
+2023-08-27 12:34:58,871 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-08-27 12:34:58,871 DEBUG [main] headers:265 - << Content-Length: 128
+2023-08-27 12:34:58,872 DEBUG [main] headers:265 - << ETag: W/"80-ZUQdMU8ds+j0zjlRYgtyhBw8CYo"
+2023-08-27 12:34:58,872 DEBUG [main] headers:265 - << Date: Sun, 27 Aug 2023 07:04:58 GMT
+2023-08-27 12:34:58,873 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-08-27 12:34:58,874 DEBUG [main] headers:265 - << Keep-Alive: timeout=5
+2023-08-27 12:34:58,883 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive for 5000 MILLISECONDS
+2023-08-27 12:34:58,897 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
+2023-08-27 12:34:58,915 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-08-27 12:34:58,989 DEBUG [main] wire:73 -  << "{[\n]"
+2023-08-27 12:34:58,989 DEBUG [main] wire:73 -  << "  "id": 1339,[\n]"
+2023-08-27 12:34:58,990 DEBUG [main] wire:73 -  << "  "name": "Darius Greenholt",[\n]"
+2023-08-27 12:34:58,991 DEBUG [main] wire:73 -  << "  "gender": "female",[\n]"
+2023-08-27 12:34:58,991 DEBUG [main] wire:73 -  << "  "email": "carter.brekke@gmail.com",[\n]"
+2023-08-27 12:34:58,991 DEBUG [main] wire:73 -  << "  "status": "female"[\n]"
+2023-08-27 12:34:58,992 DEBUG [main] wire:87 -  << "}"
+2023-08-27 12:34:58,995 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5fa5c8cf
+2023-08-27 12:34:58,998 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2023-08-27 12:34:59,856  INFO [main] RestAssered_WithBDD_Framework:104 - New resource is created successfully by Post Method
+2023-08-27 12:34:59,943 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {}->http://localhost:3000
+2023-08-27 12:34:59,944 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to localhost:3000
+2023-08-27 12:34:59,946 DEBUG [main] DefaultClientConnectionOperator:198 - Connect to localhost:3000 timed out. Connection will be retried using another IP address
+2023-08-27 12:34:59,947 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to localhost:3000
+2023-08-27 12:34:59,954 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-08-27 12:34:59,958 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-08-27 12:34:59,963 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-08-27 12:34:59,967 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-08-27 12:34:59,971 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-08-27 12:34:59,973 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /user/1339 HTTP/1.1
+2023-08-27 12:34:59,974 DEBUG [main] wire:73 -  >> "GET /user/1339 HTTP/1.1[\r][\n]"
+2023-08-27 12:34:59,978 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-08-27 12:34:59,979 DEBUG [main] wire:73 -  >> "Host: localhost:3000[\r][\n]"
+2023-08-27 12:34:59,980 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-08-27 12:34:59,980 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)[\r][\n]"
+2023-08-27 12:34:59,981 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-08-27 12:34:59,982 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-08-27 12:34:59,983 DEBUG [main] headers:278 - >> GET /user/1339 HTTP/1.1
+2023-08-27 12:34:59,984 DEBUG [main] headers:281 - >> Accept: */*
+2023-08-27 12:34:59,985 DEBUG [main] headers:281 - >> Host: localhost:3000
+2023-08-27 12:34:59,989 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-08-27 12:34:59,989 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+2023-08-27 12:34:59,990 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-08-27 12:35:00,019 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-08-27 12:35:00,020 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-08-27 12:35:00,023 DEBUG [main] wire:73 -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+2023-08-27 12:35:00,024 DEBUG [main] wire:73 -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2023-08-27 12:35:00,025 DEBUG [main] wire:73 -  << "Cache-Control: no-cache[\r][\n]"
+2023-08-27 12:35:00,026 DEBUG [main] wire:73 -  << "Pragma: no-cache[\r][\n]"
+2023-08-27 12:35:00,028 DEBUG [main] wire:73 -  << "Expires: -1[\r][\n]"
+2023-08-27 12:35:00,029 DEBUG [main] wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2023-08-27 12:35:00,030 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-08-27 12:35:00,032 DEBUG [main] wire:73 -  << "Content-Length: 128[\r][\n]"
+2023-08-27 12:35:00,033 DEBUG [main] wire:73 -  << "ETag: W/"80-ZUQdMU8ds+j0zjlRYgtyhBw8CYo"[\r][\n]"
+2023-08-27 12:35:00,034 DEBUG [main] wire:73 -  << "Date: Sun, 27 Aug 2023 07:05:00 GMT[\r][\n]"
+2023-08-27 12:35:00,035 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-08-27 12:35:00,036 DEBUG [main] wire:73 -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-08-27 12:35:00,040 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-08-27 12:35:00,042 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-08-27 12:35:00,044 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-08-27 12:35:00,045 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-08-27 12:35:00,046 DEBUG [main] headers:265 - << Vary: Origin, Accept-Encoding
+2023-08-27 12:35:00,047 DEBUG [main] headers:265 - << Access-Control-Allow-Credentials: true
+2023-08-27 12:35:00,048 DEBUG [main] headers:265 - << Cache-Control: no-cache
+2023-08-27 12:35:00,048 DEBUG [main] headers:265 - << Pragma: no-cache
+2023-08-27 12:35:00,049 DEBUG [main] headers:265 - << Expires: -1
+2023-08-27 12:35:00,052 DEBUG [main] headers:265 - << X-Content-Type-Options: nosniff
+2023-08-27 12:35:00,053 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-08-27 12:35:00,060 DEBUG [main] headers:265 - << Content-Length: 128
+2023-08-27 12:35:00,064 DEBUG [main] headers:265 - << ETag: W/"80-ZUQdMU8ds+j0zjlRYgtyhBw8CYo"
+2023-08-27 12:35:00,069 DEBUG [main] headers:265 - << Date: Sun, 27 Aug 2023 07:05:00 GMT
+2023-08-27 12:35:00,071 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-08-27 12:35:00,073 DEBUG [main] headers:265 - << Keep-Alive: timeout=5
+2023-08-27 12:35:00,082 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive for 5000 MILLISECONDS
+2023-08-27 12:35:00,083 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
+2023-08-27 12:35:00,084 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-08-27 12:35:00,096 DEBUG [main] wire:73 -  << "{[\n]"
+2023-08-27 12:35:00,104 DEBUG [main] wire:73 -  << "  "id": 1339,[\n]"
+2023-08-27 12:35:00,107 DEBUG [main] wire:73 -  << "  "name": "Darius Greenholt",[\n]"
+2023-08-27 12:35:00,111 DEBUG [main] wire:73 -  << "  "gender": "female",[\n]"
+2023-08-27 12:35:00,114 DEBUG [main] wire:73 -  << "  "email": "carter.brekke@gmail.com",[\n]"
+2023-08-27 12:35:00,117 DEBUG [main] wire:73 -  << "  "status": "female"[\n]"
+2023-08-27 12:35:00,120 DEBUG [main] wire:87 -  << "}"
+2023-08-27 12:35:00,123 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@626df173
+2023-08-27 12:35:00,126 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2023-08-27 12:35:00,137  INFO [main] RestAssered_WithBDD_Framework:114 - Existing Resource is Retrived successfully by Get Method
+2023-08-27 12:35:00,187 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {}->http://localhost:3000
+2023-08-27 12:35:00,189 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to localhost:3000
+2023-08-27 12:35:00,191 DEBUG [main] DefaultClientConnectionOperator:198 - Connect to localhost:3000 timed out. Connection will be retried using another IP address
+2023-08-27 12:35:00,192 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to localhost:3000
+2023-08-27 12:35:00,196 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-08-27 12:35:00,197 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-08-27 12:35:00,197 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-08-27 12:35:00,198 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-08-27 12:35:00,199 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-08-27 12:35:00,200 DEBUG [main] DefaultClientConnection:274 - Sending request: PUT /user/1339 HTTP/1.1
+2023-08-27 12:35:00,201 DEBUG [main] wire:73 -  >> "PUT /user/1339 HTTP/1.1[\r][\n]"
+2023-08-27 12:35:00,201 DEBUG [main] wire:73 -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+2023-08-27 12:35:00,202 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2023-08-27 12:35:00,202 DEBUG [main] wire:73 -  >> "Content-Length: 105[\r][\n]"
+2023-08-27 12:35:00,203 DEBUG [main] wire:73 -  >> "Host: localhost:3000[\r][\n]"
+2023-08-27 12:35:00,204 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-08-27 12:35:00,204 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)[\r][\n]"
+2023-08-27 12:35:00,205 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-08-27 12:35:00,205 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-08-27 12:35:00,205 DEBUG [main] headers:278 - >> PUT /user/1339 HTTP/1.1
+2023-08-27 12:35:00,206 DEBUG [main] headers:281 - >> Accept: application/json, application/javascript, text/javascript, text/json
+2023-08-27 12:35:00,206 DEBUG [main] headers:281 - >> Content-Type: application/json
+2023-08-27 12:35:00,206 DEBUG [main] headers:281 - >> Content-Length: 105
+2023-08-27 12:35:00,207 DEBUG [main] headers:281 - >> Host: localhost:3000
+2023-08-27 12:35:00,207 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-08-27 12:35:00,207 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+2023-08-27 12:35:00,209 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-08-27 12:35:00,210 DEBUG [main] wire:87 -  >> "{"id":0,"name":"Ms. Shannon Kautzer","gender":"male","email":"geraldo.kunde@hotmail.com","status":"male"}"
+2023-08-27 12:35:00,237 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-08-27 12:35:00,238 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-08-27 12:35:00,238 DEBUG [main] wire:73 -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+2023-08-27 12:35:00,239 DEBUG [main] wire:73 -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2023-08-27 12:35:00,239 DEBUG [main] wire:73 -  << "Cache-Control: no-cache[\r][\n]"
+2023-08-27 12:35:00,240 DEBUG [main] wire:73 -  << "Pragma: no-cache[\r][\n]"
+2023-08-27 12:35:00,240 DEBUG [main] wire:73 -  << "Expires: -1[\r][\n]"
+2023-08-27 12:35:00,241 DEBUG [main] wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2023-08-27 12:35:00,241 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-08-27 12:35:00,242 DEBUG [main] wire:73 -  << "Content-Length: 129[\r][\n]"
+2023-08-27 12:35:00,243 DEBUG [main] wire:73 -  << "ETag: W/"81-T3XxZXBKoXGNwzyJhkp49NXZdJo"[\r][\n]"
+2023-08-27 12:35:00,244 DEBUG [main] wire:73 -  << "Date: Sun, 27 Aug 2023 07:05:00 GMT[\r][\n]"
+2023-08-27 12:35:00,245 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-08-27 12:35:00,245 DEBUG [main] wire:73 -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-08-27 12:35:00,246 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-08-27 12:35:00,246 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-08-27 12:35:00,247 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-08-27 12:35:00,248 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-08-27 12:35:00,248 DEBUG [main] headers:265 - << Vary: Origin, Accept-Encoding
+2023-08-27 12:35:00,249 DEBUG [main] headers:265 - << Access-Control-Allow-Credentials: true
+2023-08-27 12:35:00,250 DEBUG [main] headers:265 - << Cache-Control: no-cache
+2023-08-27 12:35:00,250 DEBUG [main] headers:265 - << Pragma: no-cache
+2023-08-27 12:35:00,251 DEBUG [main] headers:265 - << Expires: -1
+2023-08-27 12:35:00,252 DEBUG [main] headers:265 - << X-Content-Type-Options: nosniff
+2023-08-27 12:35:00,252 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-08-27 12:35:00,253 DEBUG [main] headers:265 - << Content-Length: 129
+2023-08-27 12:35:00,253 DEBUG [main] headers:265 - << ETag: W/"81-T3XxZXBKoXGNwzyJhkp49NXZdJo"
+2023-08-27 12:35:00,254 DEBUG [main] headers:265 - << Date: Sun, 27 Aug 2023 07:05:00 GMT
+2023-08-27 12:35:00,254 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-08-27 12:35:00,255 DEBUG [main] headers:265 - << Keep-Alive: timeout=5
+2023-08-27 12:35:00,256 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive for 5000 MILLISECONDS
+2023-08-27 12:35:00,256 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
+2023-08-27 12:35:00,256 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-08-27 12:35:00,258 DEBUG [main] wire:73 -  << "{[\n]"
+2023-08-27 12:35:00,260 DEBUG [main] wire:73 -  << "  "id": 1339,[\n]"
+2023-08-27 12:35:00,261 DEBUG [main] wire:73 -  << "  "name": "Ms. Shannon Kautzer",[\n]"
+2023-08-27 12:35:00,261 DEBUG [main] wire:73 -  << "  "gender": "male",[\n]"
+2023-08-27 12:35:00,261 DEBUG [main] wire:73 -  << "  "email": "geraldo.kunde@hotmail.com",[\n]"
+2023-08-27 12:35:00,262 DEBUG [main] wire:73 -  << "  "status": "male"[\n]"
+2023-08-27 12:35:00,262 DEBUG [main] wire:87 -  << "}"
+2023-08-27 12:35:00,262 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5f8df69
+2023-08-27 12:35:00,263 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2023-08-27 12:35:00,265  INFO [main] RestAssered_WithBDD_Framework:140 - Modifying data successfully by Put Method
+2023-08-27 12:35:00,293 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {}->http://localhost:3000
+2023-08-27 12:35:00,294 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to localhost:3000
+2023-08-27 12:35:00,296 DEBUG [main] DefaultClientConnectionOperator:198 - Connect to localhost:3000 timed out. Connection will be retried using another IP address
+2023-08-27 12:35:00,297 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to localhost:3000
+2023-08-27 12:35:00,298 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-08-27 12:35:00,299 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-08-27 12:35:00,300 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-08-27 12:35:00,304 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-08-27 12:35:00,305 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-08-27 12:35:00,305 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /user/1339 HTTP/1.1
+2023-08-27 12:35:00,306 DEBUG [main] wire:73 -  >> "GET /user/1339 HTTP/1.1[\r][\n]"
+2023-08-27 12:35:00,307 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-08-27 12:35:00,308 DEBUG [main] wire:73 -  >> "Host: localhost:3000[\r][\n]"
+2023-08-27 12:35:00,311 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-08-27 12:35:00,312 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)[\r][\n]"
+2023-08-27 12:35:00,313 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-08-27 12:35:00,314 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-08-27 12:35:00,314 DEBUG [main] headers:278 - >> GET /user/1339 HTTP/1.1
+2023-08-27 12:35:00,315 DEBUG [main] headers:281 - >> Accept: */*
+2023-08-27 12:35:00,315 DEBUG [main] headers:281 - >> Host: localhost:3000
+2023-08-27 12:35:00,316 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-08-27 12:35:00,317 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+2023-08-27 12:35:00,317 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-08-27 12:35:00,346 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-08-27 12:35:00,347 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2023-08-27 12:35:00,348 DEBUG [main] wire:73 -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+2023-08-27 12:35:00,348 DEBUG [main] wire:73 -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2023-08-27 12:35:00,348 DEBUG [main] wire:73 -  << "Cache-Control: no-cache[\r][\n]"
+2023-08-27 12:35:00,350 DEBUG [main] wire:73 -  << "Pragma: no-cache[\r][\n]"
+2023-08-27 12:35:00,350 DEBUG [main] wire:73 -  << "Expires: -1[\r][\n]"
+2023-08-27 12:35:00,351 DEBUG [main] wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2023-08-27 12:35:00,351 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-08-27 12:35:00,352 DEBUG [main] wire:73 -  << "Content-Length: 129[\r][\n]"
+2023-08-27 12:35:00,353 DEBUG [main] wire:73 -  << "ETag: W/"81-T3XxZXBKoXGNwzyJhkp49NXZdJo"[\r][\n]"
+2023-08-27 12:35:00,353 DEBUG [main] wire:73 -  << "Date: Sun, 27 Aug 2023 07:05:00 GMT[\r][\n]"
+2023-08-27 12:35:00,354 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-08-27 12:35:00,356 DEBUG [main] wire:73 -  << "Keep-Alive: timeout=5[\r][\n]"
+2023-08-27 12:35:00,357 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-08-27 12:35:00,358 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-08-27 12:35:00,358 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-08-27 12:35:00,361 DEBUG [main] headers:265 - << X-Powered-By: Express
+2023-08-27 12:35:00,362 DEBUG [main] headers:265 - << Vary: Origin, Accept-Encoding
+2023-08-27 12:35:00,363 DEBUG [main] headers:265 - << Access-Control-Allow-Credentials: true
+2023-08-27 12:35:00,364 DEBUG [main] headers:265 - << Cache-Control: no-cache
+2023-08-27 12:35:00,364 DEBUG [main] headers:265 - << Pragma: no-cache
+2023-08-27 12:35:00,365 DEBUG [main] headers:265 - << Expires: -1
+2023-08-27 12:35:00,366 DEBUG [main] headers:265 - << X-Content-Type-Options: nosniff
+2023-08-27 12:35:00,366 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2023-08-27 12:35:00,367 DEBUG [main] headers:265 - << Content-Length: 129
+2023-08-27 12:35:00,368 DEBUG [main] headers:265 - << ETag: W/"81-T3XxZXBKoXGNwzyJhkp49NXZdJo"
+2023-08-27 12:35:00,369 DEBUG [main] headers:265 - << Date: Sun, 27 Aug 2023 07:05:00 GMT
+2023-08-27 12:35:00,371 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-08-27 12:35:00,371 DEBUG [main] headers:265 - << Keep-Alive: timeout=5
+2023-08-27 12:35:00,373 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive for 5000 MILLISECONDS
+2023-08-27 12:35:00,374 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
+2023-08-27 12:35:00,381 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-08-27 12:35:00,382 DEBUG [main] wire:73 -  << "{[\n]"
+2023-08-27 12:35:00,384 DEBUG [main] wire:73 -  << "  "id": 1339,[\n]"
+2023-08-27 12:35:00,385 DEBUG [main] wire:73 -  << "  "name": "Ms. Shannon Kautzer",[\n]"
+2023-08-27 12:35:00,385 DEBUG [main] wire:73 -  << "  "gender": "male",[\n]"
+2023-08-27 12:35:00,386 DEBUG [main] wire:73 -  << "  "email": "geraldo.kunde@hotmail.com",[\n]"
+2023-08-27 12:35:00,388 DEBUG [main] wire:73 -  << "  "status": "male"[\n]"
+2023-08-27 12:35:00,388 DEBUG [main] wire:87 -  << "}"
+2023-08-27 12:35:00,388 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6ad3fbe4
+2023-08-27 12:35:00,389 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2023-08-27 12:35:00,396  INFO [main] RestAssered_WithBDD_Framework:150 - Deleting Resource is successfully by Delete Method
+2023-08-27 12:35:00,448 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/spark.spa.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,449 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/spark.spa_en_US.ftl"): Not found
+2023-08-27 12:35:00,451 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
+2023-08-27 12:35:00,453 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
+2023-08-27 12:35:00,453 DEBUG [main] cache:45 - Loading template for "spark/spark.spa.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/spark.spa.ftl"
+2023-08-27 12:35:00,542 DEBUG [main] cache:45 - Couldn't find template in cache for "commons/commons-variables.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,542 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-variables_en_US.ftl"): Not found
+2023-08-27 12:35:00,543 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+2023-08-27 12:35:00,544 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+2023-08-27 12:35:00,544 DEBUG [main] cache:45 - Loading template for "commons/commons-variables.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-variables.ftl"
+2023-08-27 12:35:00,559 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:63329<->0:0:0:0:0:0:0:1:3000 closed
+2023-08-27 12:35:00,560 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:63331<->0:0:0:0:0:0:0:1:3000 closed
+2023-08-27 12:35:00,561 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:63333<->0:0:0:0:0:0:0:1:3000 closed
+2023-08-27 12:35:00,654 DEBUG [main] cache:45 - Couldn't find template in cache for "commons/commons-macros.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,655 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-macros_en_US.ftl"): Not found
+2023-08-27 12:35:00,657 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
+2023-08-27 12:35:00,658 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
+2023-08-27 12:35:00,663 DEBUG [main] cache:45 - Loading template for "commons/commons-macros.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-macros.ftl"
+2023-08-27 12:35:00,678 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/macros/attributes.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,680 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attributes_en_US.ftl"): Not found
+2023-08-27 12:35:00,681 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
+2023-08-27 12:35:00,682 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
+2023-08-27 12:35:00,683 DEBUG [main] cache:45 - Loading template for "spark/macros/attributes.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attributes.ftl"
+2023-08-27 12:35:00,686 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/macros/log.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,687 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/log_en_US.ftl"): Not found
+2023-08-27 12:35:00,688 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
+2023-08-27 12:35:00,689 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
+2023-08-27 12:35:00,690 DEBUG [main] cache:45 - Loading template for "spark/macros/log.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/log.ftl"
+2023-08-27 12:35:00,696 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/macros/recurse_nodes.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,700 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_US.ftl"): Not found
+2023-08-27 12:35:00,701 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
+2023-08-27 12:35:00,705 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
+2023-08-27 12:35:00,707 DEBUG [main] cache:45 - Loading template for "spark/macros/recurse_nodes.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/recurse_nodes.ftl"
+2023-08-27 12:35:00,733 DEBUG [main] cache:45 - "spark/macros/log.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2023-08-27 12:35:00,737 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/macros/attr-common.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,744 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common_en_US.ftl"): Not found
+2023-08-27 12:35:00,747 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common_en.ftl"): Not found
+2023-08-27 12:35:00,749 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common.ftl"): Found
+2023-08-27 12:35:00,749 DEBUG [main] cache:45 - Loading template for "spark/macros/attr-common.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attr-common.ftl"
+2023-08-27 12:35:00,764 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/head.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,768 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/head_en_US.ftl"): Not found
+2023-08-27 12:35:00,769 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
+2023-08-27 12:35:00,770 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
+2023-08-27 12:35:00,770 DEBUG [main] cache:45 - Loading template for "spark/partials/head.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/head.ftl"
+2023-08-27 12:35:00,779 DEBUG [main] cache:45 - Couldn't find template in cache for "commons/commons-inject-css.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,780 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en_US.ftl"): Not found
+2023-08-27 12:35:00,781 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
+2023-08-27 12:35:00,783 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
+2023-08-27 12:35:00,793 DEBUG [main] cache:45 - Loading template for "commons/commons-inject-css.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-css.ftl"
+2023-08-27 12:35:00,795 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/navbar.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,796 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/navbar_en_US.ftl"): Not found
+2023-08-27 12:35:00,797 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
+2023-08-27 12:35:00,798 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
+2023-08-27 12:35:00,799 DEBUG [main] cache:45 - Loading template for "spark/partials/navbar.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/navbar.ftl"
+2023-08-27 12:35:00,811 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/sidenav.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,812 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en_US.ftl"): Not found
+2023-08-27 12:35:00,814 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
+2023-08-27 12:35:00,815 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
+2023-08-27 12:35:00,815 DEBUG [main] cache:45 - Loading template for "spark/partials/sidenav.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/sidenav.ftl"
+2023-08-27 12:35:00,836 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/test.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,840 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/test_en_US.ftl"): Not found
+2023-08-27 12:35:00,841 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
+2023-08-27 12:35:00,844 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
+2023-08-27 12:35:00,845 DEBUG [main] cache:45 - Loading template for "spark/partials/test.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/test.ftl"
+2023-08-27 12:35:00,867 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,869 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en_US.ftl"): Not found
+2023-08-27 12:35:00,870 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
+2023-08-27 12:35:00,871 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
+2023-08-27 12:35:00,872 DEBUG [main] cache:45 - Loading template for "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/standard-content.ftl"
+2023-08-27 12:35:00,892 DEBUG [main] cache:45 - "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2023-08-27 12:35:00,899 DEBUG [main] cache:45 - "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2023-08-27 12:35:00,905 DEBUG [main] cache:45 - "spark/partials/standard-content.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2023-08-27 12:35:00,912 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/exception.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,914 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/exception_en_US.ftl"): Not found
+2023-08-27 12:35:00,916 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/exception_en.ftl"): Not found
+2023-08-27 12:35:00,917 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/exception.ftl"): Found
+2023-08-27 12:35:00,918 DEBUG [main] cache:45 - Loading template for "spark/partials/exception.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/exception.ftl"
+2023-08-27 12:35:00,921 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/category.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,923 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/category_en_US.ftl"): Not found
+2023-08-27 12:35:00,928 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/category_en.ftl"): Not found
+2023-08-27 12:35:00,929 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/category.ftl"): Found
+2023-08-27 12:35:00,929 DEBUG [main] cache:45 - Loading template for "spark/partials/category.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/category.ftl"
+2023-08-27 12:35:00,931 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/device.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,932 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/device_en_US.ftl"): Not found
+2023-08-27 12:35:00,940 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/device_en.ftl"): Not found
+2023-08-27 12:35:00,943 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/device.ftl"): Found
+2023-08-27 12:35:00,944 DEBUG [main] cache:45 - Loading template for "spark/partials/device.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/device.ftl"
+2023-08-27 12:35:00,948 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/author.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,950 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/author_en_US.ftl"): Not found
+2023-08-27 12:35:00,952 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/author_en.ftl"): Not found
+2023-08-27 12:35:00,953 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/author.ftl"): Found
+2023-08-27 12:35:00,953 DEBUG [main] cache:45 - Loading template for "spark/partials/author.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/author.ftl"
+2023-08-27 12:35:00,957 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/log.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,960 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/log_en_US.ftl"): Not found
+2023-08-27 12:35:00,962 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/log_en.ftl"): Not found
+2023-08-27 12:35:00,963 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/log.ftl"): Found
+2023-08-27 12:35:00,964 DEBUG [main] cache:45 - Loading template for "spark/partials/log.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/log.ftl"
+2023-08-27 12:35:00,967 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/dashboard.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:00,969 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en_US.ftl"): Not found
+2023-08-27 12:35:00,970 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
+2023-08-27 12:35:00,971 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
+2023-08-27 12:35:00,971 DEBUG [main] cache:45 - Loading template for "spark/partials/dashboard.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/dashboard.ftl"
+2023-08-27 12:35:01,036 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/scripts.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:01,040 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/scripts_en_US.ftl"): Not found
+2023-08-27 12:35:01,044 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
+2023-08-27 12:35:01,046 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
+2023-08-27 12:35:01,051 DEBUG [main] cache:45 - Loading template for "spark/partials/scripts.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/scripts.ftl"
+2023-08-27 12:35:01,056 DEBUG [main] cache:45 - Couldn't find template in cache for "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed); will try to load it.
+2023-08-27 12:35:01,058 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en_US.ftl"): Not found
+2023-08-27 12:35:01,063 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
+2023-08-27 12:35:01,067 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
+2023-08-27 12:35:01,070 DEBUG [main] cache:45 - Loading template for "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/narap/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-js.ftl"
